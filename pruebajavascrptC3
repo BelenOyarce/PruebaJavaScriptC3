@@ -1,0 +1,55 @@
+//EJERCICIO 1
+const dia1 = ('martes') //definir constantes de dias 
+const dia2 = ('jueves')
+
+var matrizPreciosMartes = [700,1200,5000,8000] // definir la matriz con los precios originales
+var matrizPreciosMartesDesc = [] //definir nueva matriz para precios con descuento
+function descuento(precio){
+    matrizPrecios.forEach(numero=>matrizPreciosMartesDesc.push(numero*0.80)); //
+    console.log(matrizPreciosMartesDesc);
+}
+
+//EJERCICIO 2
+
+/*function descuento5Porc(producto1,producto2,producto3){
+    if(producto1,producto2,producto3>=3){
+        console.log(producto*0.95)
+    }else(
+        console.log(producto)
+
+    )
+}
+descuento5Porc()*/
+
+//EJERCICIO 3 
+/* para determinar si el precio ingresado es correcto, se declara una funcion para obtener si el precio corresponde o no */
+
+function precioCorrecto(precio){
+    if(precio>0){   //en esta funcion realizo una comparacion para ver si el precio es mayor a 0, sera un numero positivo y resultara en 'precio correcto'
+        console.log('precio correcto');
+    }else{   // por el contrario si el precio es menor a 0, este valor es negativo y devolvera 'precio invalido'
+        console.log('precio invalido')
+    }
+}
+
+precioCorrecto(800)
+precioCorrecto(-800)
+
+//EJERCICIO 4 
+
+
+function precioMenor(preciosProductos){
+    var menor = preciosProductos
+    for(let i = 0; i < preciosProductos.length; i++){ //For para que revise precios uno a uno y los compare para ver cual es el menor
+    if(precioProductos < menor){
+        menor = precioProductos[i]
+   } 
+ } 
+ }
+
+ var preciosProductos = [200,5500,900,7000,500,300];
+ var menor = precioMenor(preciosProductos)
+
+ preciosProductos.slice(preciosProductos.indezOf(menor),1);
+
+ console.log(menor);
